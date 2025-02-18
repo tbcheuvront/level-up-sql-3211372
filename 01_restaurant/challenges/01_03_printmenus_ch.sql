@@ -4,9 +4,8 @@
 -- Create a report showing appetizers and beverages.
 -- Create a report with all items except beverages.
 
--- This solution I've developed works, but the one in the solution
--- is more elegant. It avoids the IN clause and excludes columns
--- which are not to be displayed to customers.
+-- The final table is the most elegant solution and presents a 
+-- front that is desirable for customer consumption.
 SELECT
   *
 FROM
@@ -27,14 +26,13 @@ ORDER BY
   Type;
 
 SELECT
-  *
+  Type,
+  Name,
+  Price,
+  Description
 From
   Dishes
 WHERE
-  Type
-IN
-  ('Appetizer',
-  'Dessert',
-  'Main')
+  Type != 'Beverage'
 ORDER BY
   Type;
