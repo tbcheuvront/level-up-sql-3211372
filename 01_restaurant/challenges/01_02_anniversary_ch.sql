@@ -6,6 +6,7 @@
 
 -- Hint: SQLite offers the INTEGER and REAL datatypes
 
-CREATE TABLE Responses
-  (column1 CustomerID,
-  column2 PartySize);                     
+CREATE TABLE Responses (
+  CustomerID int,
+  PartySize int
+  );                     
