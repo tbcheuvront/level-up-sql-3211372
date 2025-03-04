@@ -2,3 +2,8 @@
 
 -- Make a pick list of books published from 1890-1899 
 -- which are not currently checked out.
+
+SELECT
+  Books.Barcode,
+  Books.Title,
+  Books.
